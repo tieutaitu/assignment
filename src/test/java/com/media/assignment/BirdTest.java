@@ -1,30 +1,11 @@
 package com.media.assignment;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
-
-import junit.framework.TestCase;
 
 /**
  * Unit test for Solution class.
  */
-public class SolutionTest extends TestCase {
-	protected final ByteArrayOutputStream os = new ByteArrayOutputStream();
-	protected final PrintStream ps = System.out;
-
-	@Before
-	public void setUp() {
-		System.setOut(new PrintStream(os));
-	}
-
-	@After
-	public void tearDown() {
-		System.setOut(ps);
-	}
+public class BirdTest extends AbstractTest {
 
 	@Test
 	public void test_bird_can_fly() {
